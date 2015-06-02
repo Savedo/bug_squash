@@ -1,0 +1,26 @@
+<div class="car">
+  <h4>{{ plate }}</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Brand: {{ brand }}</p>
+      <p>Year: {{ year }}</p>
+    </div>
+    <div class="col-md-6">
+      <p>Price: {{ price }}</p>
+      <p>Color: {{ color }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <span>Owner: {{ owner }}</>
+    </div>
+    <div class="col-md-6">
+      <input type="text" ng-model="owner" class="form-control"></input>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <a class="btn btn-default btn-primary" href="#/cars" role="button" ng-click="sellCar()">Sell</a>
+    </div>
+  </div>
+</div>
